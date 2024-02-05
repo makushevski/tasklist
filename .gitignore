@@ -1,0 +1,70 @@
+# Общие исключения
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Исключения Node (Фронтенд)
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/npm-debug.log
+/frontend/yarn-error.log
+/frontend/yarn-debug.log
+
+# Исключения IDE (VSCode, JetBrains и т.д.)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Исключения .NET (Бэкенд)
+/backend/bin/
+/backend/obj/
+/backend/out/
+/backend/*.user
+/backend/*.userprefs
+/backend/*.suo
+/backend/.vs/
+/backend/*.nupkg
+/backend/*.dbmdl
+/backend/*.jfm
+/backend/Properties/launchSettings.json
+
+# Исключения временных файлов
+/tmp/
+/temp/
+/.sass-cache
+
+# Исключения файлов журналов
+*.log.*
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Исключения Visual Studio Code
+.history
+.settings
+
+# Исключения сертификатов ASP.NET Core
+**/*.pfx
+**/*.crt
+**/*.key
+
+# Исключение файлов конфигурации, которые могут содержать секреты
+**/appsettings.Development.json
+**/appsettings.Production.json
+
+# Исключения Bower
+/frontend/bower_components/
+.bowerrc
+.bower.json
+
+# Исключения директории кэша
+.cache/
