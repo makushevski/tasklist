@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* Основные стили страницы для темной темы */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Глубокий серый фон */
+  margin: 0;
+  padding: 20px;
+  color: #E0E0E0; /* Светло-серый текст */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #E0E0E0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Стилизация формы добавления задач в темной теме */
+form {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"] {
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #333333; /* Темно-серый бордюр */
+  background-color: #333333; /* Темно-серый фон для инпута */
+  color: #E0E0E0; /* Светло-серый текст */
+  border-radius: 4px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #757575; /* Серая кнопка */
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="submit"]:hover {
+  background-color: #616161; /* Чуть темнее серого при наведении */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Стилизация списка задач в темной теме */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333333; /* Темно-серый фон для задач */
+  color: #E0E0E0; /* Светло-серый текст */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Более заметная тень */
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
